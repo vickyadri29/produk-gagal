@@ -6,13 +6,14 @@
     "verbatimModuleSyntax": true,
     "plugins": [
       {
-        "name": "@astro/ts-plugin"
+        "name": "@astrojs/ts-plugin"
       }
     ],
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@data/*": ["src/data/*"]
     }
   }
 }

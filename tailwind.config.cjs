@@ -6,6 +6,11 @@ module.exports = {
       fontFamily: {
         figtree: ["Figtree", "sans-serif"],
       },
+      colors: {
+        primary: "#375878",
+        grey: "#9BACB1",
+        "primary-black": "#26343B",
+      },
     },
   },
   plugins: [],

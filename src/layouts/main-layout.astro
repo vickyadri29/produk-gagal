@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
-import Navbar from "@components/Navbar";
+import Navbar from "@components/header/Navbar";
+import Home from "@components/Home/Home.astro";
 ---
 
 <html lang="en">
@@ -16,9 +17,10 @@ import Navbar from "@components/Navbar";
       rel="stylesheet"
     />
   </head>
-  <body>
-    <main class="max-w-7xl m-auto p-5 font-figtree">
-      <Navbar />
+  <body class="bg-[#FBFDFF]">
+    <main class="max-w-7xl m-auto font-figtree text-black">
+      <Navbar client:load/>
+      <Home />
       <slot />
     </main>
   </body>
