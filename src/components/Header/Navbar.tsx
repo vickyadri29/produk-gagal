@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.ul  className="flex items-center gap-24 px-20 py-5 bg-white/30 border backdrop-blur-sm z-50 drop-shadow-sm hover:drop-shadow-lg transition-all duration-200 rounded-full">
+        <motion.ul className="xl:flex hidden items-center gap-24 px-20 py-5 bg-white/30 border backdrop-blur-sm z-50 drop-shadow-sm hover:drop-shadow-lg transition-all duration-200 rounded-full">
           {dataNavbar.map(({ id, navigate, navigate_url }) => (
             <li
               key={id}
