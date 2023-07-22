@@ -15,7 +15,7 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@astrojs/compiler@^1.0.1", "@astrojs/compiler@^1.4.2", "@astrojs/compiler@^1.5.3":
+"@astrojs/compiler@1.5.7", "@astrojs/compiler@^1.0.1", "@astrojs/compiler@^1.4.2", "@astrojs/compiler@^1.5.3":
   version "1.5.7"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.7.tgz#8c377f30bc4542631d4adc11f48896d78f79a8ac"
   integrity sha512-dFU7GAMbpTUGPkRoCoMQrGFlTe3qIiQMSOxIXp/nB1Do4My9uogjEmBHdR5Cwr4i6rc5/1R3Od9v8kU/pkHXGQ==
@@ -100,6 +100,17 @@
     is-wsl "^2.2.0"
     undici "^5.22.0"
     which-pm-runs "^1.1.0"
+
+"@astrojs/ts-plugin@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.1.0.tgz#5af732eeb5df123771001fdda8a3a1e401933e4d"
+  integrity sha512-t1NpLpN9RM27DS0TR+SDcV+J4wsUG89hHCl3gqhMeZn5/jE/T6KboIWCmE3gr7cPaxzsGFhTAFWP4zMsvL31lQ==
+  dependencies:
+    "@astrojs/compiler" "1.5.7"
+    "@jridgewell/sourcemap-codec" "^1.4.15"
+    "@volar/language-core" "~1.9.0"
+    "@volar/typescript" "~1.9.0"
+    vscode-languageserver-textdocument "^1.0.8"
 
 "@astrojs/webapi@^2.2.0":
   version "2.2.0"
@@ -579,7 +590,7 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
 
-"@jridgewell/sourcemap-codec@^1.4.10", "@jridgewell/sourcemap-codec@^1.4.13":
+"@jridgewell/sourcemap-codec@^1.4.10", "@jridgewell/sourcemap-codec@^1.4.13", "@jridgewell/sourcemap-codec@^1.4.15":
   version "1.4.15"
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
@@ -741,6 +752,27 @@
   version "21.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
   integrity sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==
+
+"@volar/language-core@1.9.1", "@volar/language-core@~1.9.0":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@volar/language-core/-/language-core-1.9.1.tgz#6a80b92f54b2ecb8fa66695689e65d589b324711"
+  integrity sha512-FlllCDE0HdUYh66zS1S4u8WobqKFStOwkd3OCXCOhPmalfm4Fte3gHNXzqs+R8VlbjK7ZvBxrG9MSiaRGXZygg==
+  dependencies:
+    "@volar/source-map" "1.9.1"
+
+"@volar/source-map@1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@volar/source-map/-/source-map-1.9.1.tgz#295ebb88224463932158f97d66226334b8a19ee5"
+  integrity sha512-KIttDVrbr3ACLzEP891uj+XdVaCnNErFNRGjNQio+gW2a9fDdz407usAJu6DHgIkJU1l18HyOxMU2VX1l2+D5g==
+  dependencies:
+    muggle-string "^0.3.1"
+
+"@volar/typescript@~1.9.0":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@volar/typescript/-/typescript-1.9.1.tgz#5ba42698ba55be7b1202c29ea84bf9796173a9dc"
+  integrity sha512-UO8bhflYMNuOpXeGYHSm3xItU4kEVhJQNGjwgw1ZqLr/sm1C7Y+pVQ/S01NpsojhFC8S+P6/p+jOTK6DO214kQ==
+  dependencies:
+    "@volar/language-core" "1.9.1"
 
 "@vscode/emmet-helper@^2.8.4":
   version "2.9.2"
@@ -2424,6 +2456,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+muggle-string@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/muggle-string/-/muggle-string-0.3.1.tgz#e524312eb1728c63dd0b2ac49e3282e6ed85963a"
+  integrity sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==
 
 mz@^2.7.0:
   version "2.7.0"
