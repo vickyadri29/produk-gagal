@@ -1,7 +1,11 @@
+import { useState } from "react";
+
 const Navbar: React.FC = () => {
   return (
     <nav>
-      <p>Navbar is here</p>
+      <ul>
+        <li></li>
+      </ul>
     </nav>
   );
 };
