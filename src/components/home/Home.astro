@@ -5,20 +5,26 @@ import shapeHeader from "/images/shape-header.svg";
 
 <section id="hero" class="flex justify-center items-center h-screen">
   <div class="flex flex-col items-center gap-2">
-    <h2 class="text-primary font-extrabold text-5xl">
-      Vicky Herdiansyah Adri.
-    </h2>
-    <div class="relative">
-      <img src={shapeHeader} alt="shape header" class="absolute -z-10 bottom-0" />
-      <h1
-        class="text-transparent bg-clip-text bg-gradient-to-r from-[#557DE8] via-[#BBA2FC] to-[#FFAA8C] text-[82px] font-bold"
-      >
-        Front-end Engineer
-      </h1>
+    <div class="flex flex-col items-center">
+      <h2 class="text-primary font-extrabold text-5xl">
+        Vicky Herdiansyah Adri.
+      </h2>
+      <div class="relative">
+        <img
+          src={shapeHeader}
+          alt="shape header"
+          class="absolute -z-10 bottom-0"
+        />
+        <h1
+          class="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1487B9] to-[#1FC2F0] text-[82px] font-bold"
+        >
+          Front-end Engineer
+        </h1>
+      </div>
     </div>
-    <p class="text-[28px] max-w-3xl text-center">
+    <p class="xl:text-2xl max-w-2xl text-center text-grey">
       <span class="font-bold">2+ years of experience,</span> using React.js and TypeScript
-      for developing a web applications.
+      for developing a website and web applications.
     </p>
     <SocialMedia client:load />
   </div>
