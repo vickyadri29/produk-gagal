@@ -21,8 +21,9 @@ const DataProjects: React.FC = () => {
             <div className="flex items-center gap-1">
               <p className="md:text-base text-xs">{type}</p>
               <div className="flex md:gap-4 gap-2 items-center">
-                {tech_stack_logo.map((data) => (
+                {tech_stack_logo.map((data, index) => (
                   <img
+                    key={index}
                     src={data}
                     alt="tech stack logo vickyadrii"
                     className="md:w-[26px] w-5 object-contain aspect-[4/3]"

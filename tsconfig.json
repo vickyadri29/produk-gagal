@@ -13,7 +13,9 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@data/*": ["src/data/*"]
+      "@data/*": ["src/data/*"],
+      "@pages/*": ["src/pages/*"]
     }
-  }
+  },
+  // "include": ["src/**/*.ts", "public/**/*.svg"]
 }
