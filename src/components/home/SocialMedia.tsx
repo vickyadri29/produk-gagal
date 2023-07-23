@@ -21,6 +21,7 @@ const SocialMedia: React.FC = () => {
       opacity: 1,
     },
   };
+
   return (
     <motion.div
       className="flex items-center justify-center md:gap-16 gap-8 md:m-0"
@@ -29,7 +30,7 @@ const SocialMedia: React.FC = () => {
       animate="visible"
     >
       {dataLogoSocialMedia.map(({ id, logo, navigate }) => (
-        <a href={navigate} >
+        <a href={navigate} key={id}>
           <motion.img
             src={logo}
             alt="logo"

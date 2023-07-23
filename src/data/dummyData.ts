@@ -5,7 +5,7 @@ import linkedin from "/icons/linkedin.svg";
 import github from "/icons/github.svg";
 import email from "/icons/email.svg";
 
-// Import image projects
+// Import image projects and skills icon
 import badonorDarah from "/images/badonordarah.png";
 import hrev from "/images/hrev.png";
 import impactPalu from "/images/impact-palu.png";
@@ -107,4 +107,19 @@ export const dataProjects: Projects[] = [
     type: "Company Profile •",
     tech_stack_logo: [react, tailwind],
   },
+];
+
+export const dataSkills: string[] = [
+  nextjs,
+  react,
+  typescript,
+  javascript,
+  redux,
+  graphql,
+  nodejs,
+  tailwind,
+  antdesign,
+  mongodb,
+  postgresql,
+  firebase,
 ];
