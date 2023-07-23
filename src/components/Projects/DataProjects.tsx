@@ -1,5 +1,5 @@
-import { dataProjects } from "@data/dummyData";
 import React from "react";
+import { dataProjects } from "../../data/dummyData";
 
 const DataProjects: React.FC = () => {
   return (

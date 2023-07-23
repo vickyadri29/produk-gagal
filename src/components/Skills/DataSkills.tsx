@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { dataSkills } from "@data/dummyData";
+import { dataSkills } from "../../data/dummyData"
 import { motion } from "framer-motion";
 
 const DataSkills = () => {

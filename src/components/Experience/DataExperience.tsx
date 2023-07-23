@@ -1,4 +1,4 @@
-import { dataExperience } from "@data/dummyData";
+import { dataExperience } from "../../data/dummyData";
 
 const DataExperience: React.FC = () => {
   return (

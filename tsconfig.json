@@ -8,14 +8,7 @@
       {
         "name": "@astrojs/ts-plugin"
       }
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@data/*": ["src/data/*"],
-      "@pages/*": ["src/pages/*"]
-    }
-  },
+    ]
+  }
   // "include": ["src/**/*.ts", "public/**/*.svg"]
 }
