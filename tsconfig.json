@@ -8,7 +8,9 @@
       {
         "name": "@astrojs/ts-plugin"
       }
-    ]
+    ],
+    "paths": {
+      "*": ["*", "*.tsx"]
+    }
   }
-  // "include": ["src/**/*.ts", "public/**/*.svg"]
 }
