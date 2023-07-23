@@ -4,7 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import Navbar from "@components/header/Navbar";
+import Navbar from "../components/Headers/Navbar";
 import ellipse from "/images/ellipse.svg";
 import { SEO } from "astro-seo";
 ---
@@ -20,9 +20,6 @@ import { SEO } from "astro-seo";
           type: "website",
           image:
             "https://media.licdn.com/dms/image/D5603AQE4v1D9ALFH3Q/profile-displayphoto-shrink_400_400/0/1685120536769?e=1695859200&v=beta&t=0U7MMccAyKPdtvn98VV2ajuhAHymEjA5Ly1vr6MG1Vs",
-          url: "https://vickyadrii.vercel.app",
-          site_name: "Vicky Adri",
-          locale: "id_ID",
         },
       }}
       extend={{
