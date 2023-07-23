@@ -1,10 +1,9 @@
-import React from "react";
-import { dataProjects } from "../../data/dummyData";
+import { dataProjectss } from "../../data/dummyData";
 
 const DataProjects: React.FC = () => {
   return (
     <div className="grid md:grid-cols-2 md:gap-x-14  md:gap-y-8 gap-y-6 md:mt-14 mt-8">
-      {dataProjects.map(({ id, img_url, logo, type, tech_stack_logo }) => (
+      {dataProjectss.map(({ id, img_url, logo, type, tech_stack_logo }) => (
         <div
           key={id}
           className="flex justify-center flex-col p-4 gap-3 bg-white drop-shadow-sm hover:drop-shadow-lg cursor-pointer md:rounded-xl rounded-md  transition-all"

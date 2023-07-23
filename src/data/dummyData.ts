@@ -89,7 +89,7 @@ export const dataLogoSocialMedia: LogoSocialMedia[] = [
   },
 ];
 
-export const dataProjects: Projects[] = [
+export const dataProjectss: Projects[] = [
   {
     id: 0,
     img_url: badonorDarah,
