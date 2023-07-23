@@ -1,7 +1,7 @@
 ---
 import aboutImage from "/images/about-image.svg";
 import aboutShape from "/images/shape.svg";
-import burstBload from "/icons/burst-bloat.svg";
+import BurstBload from "./BurstBload";
 ---
 
 <section id="profile" class="flex justify-center w-full">
@@ -14,11 +14,12 @@ import burstBload from "/icons/burst-bloat.svg";
           class="absolute -z-10 bottom-2 xl:w-auto md:w-56 w-48"
         />
         <h2 class="md:text-[56px] text-[30px] font-bold text-primary">👨‍💻 About Me</h2>
-        <img
+        <!-- <img
           src={burstBload}
           alt="about shape vickyadrii"
           class="absolute -z-10 top-0 md:right-4 right-5 md:w-auto w-6"
-        />
+        /> -->
+        <BurstBload client:load />
       </div>
       <p class="xl:text-2xl md:text-base text-sm xl:leading-10 text-medium">
         Hello, I’m Vicky! I’m dedicated to continuously expanding my knowledge
