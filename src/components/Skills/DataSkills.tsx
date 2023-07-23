@@ -44,7 +44,7 @@ const DataSkills = () => {
               onMouseOut={() => setIsHover(false)}
               variants={item}
               whileHover={{ transform: "translate(0, -6px)" }}
-              className="cursor-pointer relative flex justify-center z-50 md:w-[144px] w-[70px] md:h-[140px] h-[71px] rounded-md bg-[#192D3E] md:p-5 p-3 shadow-[0px_1px_5px_0px_#000]"
+              className="cursor-pointer relative flex justify-center z-30 md:w-[144px] w-[70px] md:h-[140px] h-[71px] rounded-md bg-[#192D3E] md:p-5 p-3 shadow-[0px_1px_5px_0px_#000]"
             >
               <img
                 src={data}
