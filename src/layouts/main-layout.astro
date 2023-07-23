@@ -1,9 +1,4 @@
 ---
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
 import Navbar from "../components/Headers/Navbar";
 import ellipse from "/images/ellipse.svg";
 import { SEO } from "astro-seo";
@@ -41,9 +36,8 @@ import { SEO } from "astro-seo";
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta title={title} />
     <link rel="icon" type="image/x-icon" href="/images/logo.ico" />
-    <title>{title}</title>
+    <!-- <title>{title}</title> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
