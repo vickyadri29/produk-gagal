@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
               key={id}
               to={navigate_url}
               smooth={true}
-              duration={500}
-              offset={50}
+              duration={450}
+              offset={-100}
               spy={true}
               className="text-primary opacity-30 hover:opacity-80 font-semibold cursor-pointer"
             >
